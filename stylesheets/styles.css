@@ -55,6 +55,12 @@ footer {
   display: inline-block;
   text-align: center;
 }
+footer p {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
 .instagram {
   background: #517fa4;
 }
