@@ -12,8 +12,7 @@
 <!-- CSS
   ================================================== -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/normalize.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 
 <!-- Favicons
   ================================================== -->
@@ -26,7 +25,7 @@
     <section class="sidebar_information">
       <div class="sidebar_userimage">
          <!-- 1º Commit Tu nombre y foto -->
-        <img src="https://pbs.twimg.com/profile_images/576065411529113601/6L0NzxL__400x400.png">
+        <img src="https://pbs.twimg.com/profile_images/608618004113326080/DhUkGRSg_400x400.jpg">
         <h1 class="sidebar_information_title">Miguents</h1>
       </div>
       <div class="comunidad-autoria">
@@ -38,6 +37,9 @@
     </section>
     <ul>
           <!-- 3º Commit - Redes Sociales -->
+      <li>
+        <a href="http://migue.co/" class="social miguents">migue.co</a>
+      </li>
       <li>
         <a href="http://twitter.com/miguents" target="_blank" class="social twitter"> Twitter </a>
       </li>
@@ -53,8 +55,8 @@
   <section class="layout-principal">
     <article class="bloque">
       <!-- 4º Commit - Tu presentación -->
-      <h3>Hello my name is: MGIENTS</h3>
-      <p>Productor gráfico | diseñador de profesión | aprendiz de UI/UX, cofundador de <a href="http://361.mx" class="link">http://361.mx</a> y diseñador en el estudio <a href ="http://stick.mx" class="link">http://stick.mx</a></p>
+      <h3>MGIENTS</h3>
+      <p>Ilustrador y diseñador, CEO de mi vida, aprendiz constante de UI/UX cofundador de <a href="http://361.mx" class="link">http://361.mx</a>y diseñador en el estudio <a href ="http://stick.mx" class="link">http://stick.mx</a></p>
     </article>
 
     <article class="bloque">
@@ -66,11 +68,27 @@
       <a href="http://www.fcfm.buap.mx/emalca2015" class="link">EMALCA-2015</a>
     </article>
     <article class="bloque">
-      <a href="https://instagram.com/p/zxyAvPylCk/">
-        <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10986399_1596572297221151_1499134199_n.jpg" alt="Illustration digital">
+      <a href="https://instagram.com/p/2nHgJFylKj/">
+        <iframe src="https://scontent-dfw1-1.cdninstagram.com/hphotos-xfa1/t50.2886-16/11235716_605889166214891_1469619649_n.mp4" loop="1" frameborder="0"></iframe>
+      </a>      
+      <a href="https://instagram.com/p/3QQ4Y5ylEs/">
+        <iframe src="https://scontent-dfw1-1.cdninstagram.com/hphotos-xaf1/t50.2886-16/11389527_1593706884221301_2079951142_n.mp4" loop="1" frameborder="0"></iframe>
       </a>
+
+      <a href="https://instagram.com/p/4PRC3yylPq/">
+        <iframe src="https://scontent-dfw1-1.cdninstagram.com/hphotos-xfa1/t50.2886-16/11654882_1617293001873587_1924100668_n.mp4" loop="1" frameborder="0"></iframe>
+      </a>
+      
       <a href="https://instagram.com/p/zbx45ASlBa/">
         <iframe src="https://igcdn-videos-h-6-a.akamaihd.net/hphotos-ak-xfa1/t50.2886-16/11020559_950861744938066_1209937160_n.mp4" loop="1" frameborder="0"></iframe>
+      </a>
+
+      <a href="https://instagram.com/p/1-0PT5SlAG/">
+        <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-15/11190899_818281714914255_2077648800_n.jpg" alt="Illustration digital">
+      </a>
+
+      <a href="https://instagram.com/p/zxyAvPylCk/">
+        <img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10986399_1596572297221151_1499134199_n.jpg" alt="Illustration digital">
       </a>
       <a href="https://instagram.com/p/xdmrjjSlOd/">
         <img src="https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/10914542_1531832100428750_151858190_n.jpg" alt="Illustration Back to the future">
@@ -79,10 +97,49 @@
         <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10724048_339126862925065_954535763_n.jpg" alt="Coding">
       </a>
     </article>
+    <div class="bloque">
+      <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://migue.co?s=100&p[title]=Conoce+a+Miguents&p[images][0]=http://migue.co/assets/img/static/isotipo.jpg&p[summary]=Ilustrador,+y+Diseñador web"  id="btn-facebook" class="link">Compartir en Facebook</a>
+      <a href="http://twitter.com/home?status=Portafolio de Miguents @miguents http://migue.co/"  id="btn-twitter" class="link">Copartir en Twitter</a>
+    </div>
   </section>
   <footer>
-    <p>Creando el futuro de la web | <a href="https://platzi.com">Platzi by: mejorando.la</a></p>
+    <p>Creando el futuro de la web | <a href="https://platzi.com">Platzi</a></p>
   </footer>
-    
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $('#btn-facebook, #btn-twitter').click(function(event){
+        var width   = 575,
+            height  = 400,
+            left    = ($(window).width() - width) / 2,
+            top   = ($(window).height() - height) / 2,
+            url     = this.href,
+            opts    = 'status=1' +
+                      ',width='  + width    +
+                      ',height=' + height   +
+                      ',top='    + top      +
+                      ',left='   + left;
+        window.open(url, 'twitter', opts);
+        return false;
+    });
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

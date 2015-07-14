@@ -1,0 +1,264 @@
+@import "nib";
+@import "includes/normalize.styl";
+
+
+
+white_color = #fff
+gray_color = #E9EAED
+dark_gray_color = #373737
+
+primary_color = #4DC1C8
+
+naranja = #E94016
+dark_color = #273B46
+
+link_color = #4DC1C8
+
+instagram = #517fa4
+twitter = #55acee
+github = #E94016
+
+
+body
+    -moz-osx-font-smoothing grayscale
+    -ms-text-size-adjust 100%
+    -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
+    background gray_color
+    font-family 'Open Sans', sans-serif
+    font-size 16px
+    font-smoothing antialiased
+    font-weight 400
+    margin 0
+    width 100%
+     
+
+
+a
+    transition all .3s linear
+    text-decoration none 
+    color dark_gray_color
+    font-weight 600
+
+
+ul
+    margin 10% 0 
+    text-align center
+    padding 0
+
+ul li
+    list-style none
+    display inline-block
+    margin-bottom 10px
+
+h1
+    font-size 1.5em
+    line-height 2em
+    text-align center
+    color white_color
+    text-shadow 0 0 4px dark_gray_color
+
+h3
+    border-bottom 1px dark_gray_color solid 
+    color dark_gray_color
+    display block
+    line-height 32px 
+    padding-bottom .5em 
+    text-transform uppercase 
+    width 90%
+
+img
+    width 45%
+    max-width 280px
+    margin-top 10px
+
+iframe
+    width 45%
+    max-width 280px
+    margin 10px auto
+    
+footer
+    background dark_gray_color
+    width 100%
+    display inline-block
+    text-align center
+    p 
+        color white_color
+    a
+        color white_color
+
+.instagram
+    background instagram
+    
+.twitter
+    background twitter
+
+.github
+    background github
+
+.miguents
+    background-color primary_color
+.sidebar
+    background-color white_color 
+    background-size cover 
+    display inline-block
+    padding 0
+    vertical-align top
+    width 100% 
+
+.sidebar_information
+    background url("../img/back_miguents.png")
+    background-size cover
+    color white_color
+
+
+.sidebar_userimage
+    background-repeat no-repeat 
+    margin 0% 35% 0 
+    padding 8% 0 0 
+    text-align center 
+
+
+
+.sidebar_userimage img
+    border-radius 50%
+    border 10px solid rgba(dark_color  , 0.5)
+    width 85px 
+
+.social
+    border-bottom solid 3px dark_color 
+    border-radius 2px
+    color white_color 
+    display block
+    font-size 14px
+    list-style-type none 
+    margin 0 auto
+    padding .8em 1em
+    text-decoration none
+    text-transform uppercase
+    &:hover
+        background dark_gray_color
+        
+
+.comunidad-autoria
+    background rgba(dark_gray_color, 0.7)
+    border-bottom solid 2px dark_color
+    margin 5% 0 
+    padding 3% 0
+    text-transform uppercase
+
+
+.logo
+    display inline-block 
+    width 30% 
+    text-align center 
+    padding 3% 0 0 
+
+
+.logo img
+    width 45px 
+    border-radius 50%
+    padding 0 
+    margin 0 
+
+
+.nombre
+    display block 
+    margin 0 auto  
+    text-align center 
+
+
+.nombre p
+    color white_color
+
+
+.layout-principal
+    display inline-block
+
+.link
+    margin-top 10px
+    display inline-block
+    color link_color
+    text-decoration underline
+    &:hover
+        color dark_color
+
+
+.bloque
+    margin 2% auto 
+    width 80%
+    text-align center
+
+.bloque p
+    line-height 1.9em 
+
+.bloque a
+    margin-right 15px
+    
+.bloque 
+    img,
+    iframe
+        transition all .3s linear
+        border-radius 4px
+        box-shadow 0 2px 3px rgba(dark_gray_color, 0.5)
+        &:hover
+            box-shadow 0 5px 10px rgba(dark_gray_color, 0.5)
+            
+    
+
+@media screen and (min-width: 800px)
+    .sidebar
+        width 40%
+        height 100vh
+        position fixed
+        bottom 0
+        left 0
+        top 0
+    
+    .layout-principal
+        display inline-block
+        width 60%
+        position absolute
+        bottom 0
+        right 0
+        top 0
+    footer
+        position fixed
+        bottom 0
+        width 30%
+
+@media screen and (min-width: 1024px)
+    body
+        text-align left
+    img
+        width 260px
+    iframe
+        width 260px 
+        height 260px
+    
+    ul
+        margin-top 20%
+        
+    footer
+        width 28%
+    .bloque
+        text-align left
+        width 100%
+        
+    .sidebar_information
+        padding-top 80px
+        
+    .sidebar
+        width 28%
+    
+    .layout-principal
+        width 70%
+        
+    
+        
+    
+    
+        
+
+
+
